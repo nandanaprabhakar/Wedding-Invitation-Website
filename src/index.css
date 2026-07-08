@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #EEE5DC;
+    /* color:  #544435; */
+
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Cormorant Garamond", serif;
+  color: #926650;
+}
+
+p {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+}
+
+.banner {
+  background-image: url('../src/assets/envelope-banner.png');
+  border-radius: 50px;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 0;
+}
+
+.couple-banner  {
+  background-image: url('https://i.pinimg.com/736x/e5/50/ee/e550eeee42134ee9e72b9179d044e1a5.jpg');
+  height: 150vh;
+  background-size: cover;
+  background-position: 43% top;
+  /* position: relative; */
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 75%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    black 75%,
+    transparent 100%
+  );
+} 
+
+.invitation-banner{
+  background-image: url('https://i.pinimg.com/1200x/87/d6/c8/87d6c85094643030fd24c327ffbcdc3e.jpg');
+  height: auto;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.countDown-col {
+  position: relative;
+  width: 260px;
+  height: 340px;
+}
+
+.stack-card {
+  position: absolute;
+  width: 240px;
+  height: 320px;
+}
+
+.stack-card:nth-child(1) {
+  transform: rotate(-12deg);
+  z-index: 1;
+}
+
+.stack-card:nth-child(2) {
+  transform: rotate(0deg);
+  z-index: 2;
+}
+
+.stack-card:nth-child(3) {
+  transform: rotate(12deg);
+  z-index: 3;
+}
+
+.countDown-card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.countDown-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.timelineContainer {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.timelineContainer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/034/508/356/small/ai-generative-aesthetic-backdrop-with-delicate-white-roses-isolated-on-white-background-banner-with-copy-space-text-template-free-photo.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* Laptop */
+@media (max-width: 1024px) { 
+  .couple-banner {
+
+    height: 101vh;
+  }
+}
+
+ /* @media (max-width: 992px) { 
+  .couple-banner {
+
+    height: 101vh;
+  }
+} */
+
+/* Tablet */
+@media (max-width: 768px) { 
+  .couple-banner {
+    height: 100vh;
+  }
+}
+ /* Mobile  */
+@media (max-width: 576px) {
+  .couple-banner{
+    height: 90vh;
+  }
+ }
