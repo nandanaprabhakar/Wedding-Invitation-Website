@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material'
 import { motion } from 'motion/react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Invitation from '../Components/Invitation'
 import CountDown from '../Components/CountDown'
@@ -9,8 +9,9 @@ import WeddingTimeline from '../Components/WeddingTimeline'
 import SaveTheDate from './SaveTheDate'
 
 function HomePage() {
+
   return (
-    <div>
+    <div >
       <motion.Container fluid initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 3 }}>
         <Row>
           <Col className='couple-banner'>
@@ -26,6 +27,7 @@ function HomePage() {
       <Venue/>
       <WeddingTimeline/>
       <SaveTheDate/>
+   
     </div>
   )
 }
