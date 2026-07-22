@@ -27,10 +27,11 @@ p {
   background-size: contain;
   background-position: center;
   margin-bottom: 0;
+  position: relative;
 }
 
 .couple-banner  {
-  background-image: url('https://i.pinimg.com/736x/e5/50/ee/e550eeee42134ee9e72b9179d044e1a5.jpg');
+  background-image: url('https://images.unsplash.com/photo-1621621667797-e06afc217fb0?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJlJTIwd2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D');
   height: 150vh;
   background-size: cover;
   background-position: 43% top;
@@ -115,6 +116,26 @@ p {
   z-index: -1;
 }
 
+.thanku-banner{
+  background-image: url('https://assets.dmagstatic.com/wp-content/uploads/2026/07/Kristen-Key-and-Conrad-Lofton-touching-hands-DWeddings-FW-2026.webp');
+  height: auto;
+  background-position: center;
+  /* opacity: 0.6; */
+  position: relative;
+  overflow: hidden;
+}
+
+.thanku-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.75); /* Light overlay */
+}
+
+.thanku-banner > .row {
+  position: relative;
+  z-index: 1;
+}
 /* Laptop */
 @media (max-width: 1024px) { 
   .couple-banner {

@@ -8,7 +8,6 @@ import ArrowCircleDownTwoToneIcon from '@mui/icons-material/ArrowCircleDownTwoTo
 import ArrowCircleUpTwoToneIcon from '@mui/icons-material/ArrowCircleUpTwoTone';
 import ClearTwoToneIcon from '@mui/icons-material/ClearTwoTone';
 import { option } from 'motion/react-client';
-import logo from '../assets/logo.png'
 
 function SaveTheDate() {
   const [sDate, setSDate] = useState(false)
@@ -81,55 +80,15 @@ function SaveTheDate() {
           </> : ''}
         </Row>
         <div className='d-flex justify-content-center align-items-center'>
-        <motion.h1 initial={{y: 0, x: 0, color: '#926650',}} whileInView={{y: '25vh', translateX: '190%', color: '#C89B3C', fontSize: "clamp(30px, 5vw, 65px)"}} transition={{duration: 5}} style={{ fontFamily: '"Great Vibes", cursive', color: '#926650', fontSize: { xs: 30, sm: 40, md: 45 }, fontWeight: 600, }}>{letterD}</motion.h1>
         <Typography variant='h1' component={motion.h1} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 2 }} viewport={{ once: true }}
-          sx={{ fontFamily: '"Great Vibes", cursive', color: '#926650', fontSize: { xs: 30, sm: 40, md: 45 }, fontWeight: 600, mt:2 }}>
+          sx={{ fontFamily: '"Great Vibes", cursive', color: '#926650', fontSize: { xs: 30, sm: 40, md: 45 }, fontWeight: 600, mt:2, wordSpacing: 8 }}>
+          Dexter & Danica
+        </Typography>
       
-          exter
-        </Typography>
-         <Typography variant='h1' component={motion.h1} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}
-          sx={{ fontFamily: '"Great Vibes", cursive', color: '#926650', fontSize: { xs: 30, sm: 40, md: 45 }, fontWeight: 600, mt:2, ml:4 }}>
-      &
-        </Typography>
-                <motion.h1 initial={{y: 0, x: 0, color: '#926650',}} whileInView={{y: '49vh', x:-20, color: '#C89B3C', fontSize: "clamp(30px, 5vw, 65px)"}} transition={{duration: 5}} style={{ fontFamily: '"Great Vibes", cursive', color: '#926650', fontSize: { xs: 30, sm: 40, md: 45 }, fontWeight: 600, }}>{letterD}</motion.h1>
-          <Typography variant='h1' component={motion.h1} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}
-          sx={{ fontFamily: '"Great Vibes", cursive', color: '#926650', fontSize: { xs: 30, sm: 40, md: 45 }, fontWeight: 600, mt:2 }}>anica
-        </Typography>
+        
 </div>
       </Container>
-      <motion.div
-  initial={{ scale: 0.8, opacity: 0 }}
-  whileInView={{ scale: 1, opacity: 1 }}
-  transition={{ duration: 2 }}
-  viewport={{ once: true }}
->
-      <Container>
-        <Row>
-          <Col className='d-flex justify-content-center'>
-            <div>
-              <Box sx={{ position: "relative", display: 'flex', justifyContent: 'center' }}>
-                <Box component='img' src={logo} sx={{ height: 400 }} />
-               
-                <Box component='img' sx={{ position: 'absolute', top: '49%', left: '50%', transform: 'translate(-50%, -50%)', }} src='https://static.vecteezy.com/system/resources/thumbnails/050/698/881/small/two-gold-rings-free-png.png' height={70} />
-         
-              </Box>
-             
-                 <Typography
-                   sx={{
-                     fontFamily: '"Great Vibes", cursive',
-                     color: "#926650",
-                     fontSize: { xs: 50, md: 80 },
-                     fontWeight: 600,
-                     textAlign: 'center'
-                   }}
-                 >
-                   Thank You
-                 </Typography>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-      </motion.div>
+     
     </div>
   )
 }

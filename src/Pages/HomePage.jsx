@@ -7,6 +7,7 @@ import CountDown from '../Components/CountDown'
 import Venue from '../Components/Venue'
 import WeddingTimeline from '../Components/WeddingTimeline'
 import SaveTheDate from './SaveTheDate'
+import ThankYou from '../Components/ThankYou'
 
 function HomePage() {
 
@@ -27,7 +28,7 @@ function HomePage() {
       <Venue/>
       <WeddingTimeline/>
       <SaveTheDate/>
-   
+      <ThankYou/>
     </div>
   )
 }
