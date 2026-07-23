@@ -13,15 +13,15 @@ function SaveTheDate() {
   const [sDate, setSDate] = useState(false)
   const [index, setIndex] = useState(0);
   const image = [
-    { imgg: 'https://cdn0.weddingwire.in/vendor/3489/3_2/960/jpg/wedding-photography-retratos-by-sv-couple-shot-4_15_363489-161649342538636.jpeg' },
+    { imgg: 'https://luxtales.com/wp-content/uploads/2024/08/save-the-date-varkala-photoshoot-05-1024x683.webp' },
     { imgg: 'https://images.squarespace-cdn.com/content/v1/64638cbddd3bd07782e93043/13bda62d-10de-4057-b17c-ad687ff59b48/RAV00112.jpg' },
-    { imgg: 'https://cdn0.weddingwire.com/vendor/684322/3_2/640/jpg/cam16793_51_2223486-176541087488866.jpeg' }
+    { imgg: 'https://luxtales.com/wp-content/uploads/2024/08/varkala-beach-pre-wedding-photoshoot-01-1024x683.webp' }
   ]
 
   const letterD='D'
   return (
     <div>
-      <Container className='my-3' style={{ backgroundColor: "#FAF7F2" }}>
+      <Container className='mt-3 sDate-container' style={{ backgroundColor: "#FAF7F2" }}>
         <Typography variant='h1' component={motion.h1} initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 2 }} viewport={{ once: true }}
           sx={{ fontFamily: 'EB Garamond', color: '#6B5B50', fontSize: { xs: 30, sm: 40, md: 45 }, fontWeight: 500, textAlign: 'center' }}>
           SAVE{" "}
@@ -81,7 +81,7 @@ function SaveTheDate() {
         </Row>
         <div className='d-flex justify-content-center align-items-center'>
         <Typography variant='h1' component={motion.h1} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 2 }} viewport={{ once: true }}
-          sx={{ fontFamily: '"Great Vibes", cursive', color: '#926650', fontSize: { xs: 30, sm: 40, md: 45 }, fontWeight: 600, mt:2, wordSpacing: 8 }}>
+          sx={{ fontFamily: '"Great Vibes", cursive', color: '#926650', fontSize: { xs: 30, sm: 40, md: 45 }, fontWeight: 600, mt:2, wordSpacing: 8, mb: 6 }}>
           Dexter & Danica
         </Typography>
       

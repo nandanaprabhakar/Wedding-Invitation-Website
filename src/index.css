@@ -22,11 +22,11 @@ p {
 .banner {
   background-image: url('../src/assets/envelope-banner.png');
   border-radius: 50px;
-  height: 90vh;
+  height: 85vh;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   position: relative;
 }
 
@@ -116,6 +116,19 @@ p {
   z-index: -1;
 }
 
+.sDate-container{
+   -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 75%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    black 75%,
+    transparent 100%
+  );
+}
+
 .thanku-banner{
   background-image: url('https://assets.dmagstatic.com/wp-content/uploads/2026/07/Kristen-Key-and-Conrad-Lofton-touching-hands-DWeddings-FW-2026.webp');
   height: auto;
@@ -123,6 +136,16 @@ p {
   /* opacity: 0.6; */
   position: relative;
   overflow: hidden;
+   -webkit-mask-image: linear-gradient(
+    to top,
+    black 75%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to top,
+    black 75%,
+    transparent 100%
+  );
 }
 
 .thanku-banner::before {
