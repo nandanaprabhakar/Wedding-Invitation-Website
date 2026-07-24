@@ -24,7 +24,7 @@ p {
   border-radius: 50px;
   height: 85vh;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   /* margin-bottom: 0; */
   position: relative;
@@ -182,6 +182,9 @@ p {
 }
  /* Mobile  */
 @media (max-width: 576px) {
+  .banner{
+    height: 50vh;
+  }
   .couple-banner{
     height: 90vh;
   }
